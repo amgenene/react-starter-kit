@@ -16,6 +16,7 @@
       "routes/pricing": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/success": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/subscription-required": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/waitlist-success": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/dashboard/index": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/dashboard/chat": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/dashboard/settings": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
@@ -81,6 +82,15 @@
           "runtime": "nodejs"
         }
       },
+      "routes/waitlist-success": {
+        "id": "routes/waitlist-success",
+        "parentId": "root",
+        "file": "app/routes/waitlist-success.tsx",
+        "path": "waitlist-success",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
       "routes/dashboard/layout": {
         "id": "routes/dashboard/layout",
         "parentId": "root",
@@ -117,9 +127,9 @@
     }
   },
   "reactRouterConfig": {
-    "appDirectory": "/Users/michaelshimeles/Desktop/rsk/app",
+    "appDirectory": "/Users/alazargenene/code/react-starter/react-starter-kit/app",
     "basename": "/",
-    "buildDirectory": "/Users/michaelshimeles/Desktop/rsk/build",
+    "buildDirectory": "/Users/alazargenene/code/react-starter/react-starter-kit/build",
     "future": {
       "unstable_middleware": false,
       "unstable_optimizeDeps": false,
@@ -168,6 +178,12 @@
         "parentId": "root",
         "file": "routes/subscription-required.tsx",
         "path": "subscription-required"
+      },
+      "routes/waitlist-success": {
+        "id": "routes/waitlist-success",
+        "parentId": "root",
+        "file": "routes/waitlist-success.tsx",
+        "path": "waitlist-success"
       },
       "routes/dashboard/layout": {
         "id": "routes/dashboard/layout",

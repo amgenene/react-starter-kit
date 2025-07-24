@@ -15,12 +15,13 @@ import { api } from "../../convex/_generated/api";
 import { useState } from "react";
 
 export default function SubscriptionStatus() {
-  const { isSignedIn } = useAuth();
+  const { isSignedIn, userId } = useAuth();
   const [loadingDashboard, setLoadingDashboard] = useState(false);
 
   const subscription = useQuery(api.subscriptions.fetchUserSubscription);
   const subscriptionStatus = useQuery(
-    api.subscriptions.checkUserSubscriptionStatus
+    api.subscriptions.checkUserSubscriptionStatus,
+    isSignedIn && userId ? { userId } : "skip"
   );
   const createPortalUrl = useAction(api.subscriptions.createCustomerPortalUrl);
 
