@@ -2,8 +2,6 @@ import { getAuth } from "@clerk/react-router/ssr.server";
 import Hero from "~/components/homepage/hero";
 import HowItWorks from "~/components/homepage/how-it-works";
 import WhyItWorks from "~/components/homepage/why-it-works";
-import Testimonials from "~/components/homepage/testimonials";
-import Footer from "~/components/homepage/footer";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
